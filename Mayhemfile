@@ -1,0 +1,8 @@
+project: mipt-mips
+target: mipt-mips
+image: ghcr.io/rnshah9/playground:mipt-mips
+
+cmds:
+  - cmd: /repo/simulator/build/mipt-mips -b @@
+    env:
+      DISABLE_SMOKETEST: '1'
